@@ -65,6 +65,17 @@ sudo touch /etc/apache2/sites-available/tutorial.com.conf
     CustomLog ${APACHE_LOG_DIR}/example.com_access.log combined
 </VirtualHost>
 ``` 
+... if you want the log files within the current project directory, you can use the following:
+
+```apache
+ ...
+
+    ErrorLog /home/<your-username>/experiments_in_php__tutorial/example.com_error.log
+    CustomLog /home/<your-username>/experiments_in_php__tutorial/example.com_access.log combined
+ ...
+```
+
+
 
 #### Step 6: Enable the Virtual Host /  Disable the Default Virtual Host (Optional)
 
