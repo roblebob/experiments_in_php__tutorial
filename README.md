@@ -92,3 +92,6 @@ sudo a2dissite 000-default.conf
 ```bash
 sudo systemctl reload apache2
 ```
+
+#### Step 8: Run in browser to verify that everything is working: 
+`http://127.0.1.1/site.php`
